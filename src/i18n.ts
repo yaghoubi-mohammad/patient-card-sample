@@ -3,7 +3,7 @@ import { initReactI18next } from "react-i18next";
 
 // وارد کردن فایل‌های ترجمه
 import en from "./locales/en.json";
-import fa from "./locales/fa.json";
+import fa from "./locales/es.json";
 
 // بازیابی زبان از localStorage
 const savedLanguage = localStorage.getItem("language") || "en";
@@ -16,8 +16,8 @@ i18n
       fa: { translation: fa },
     },
     lng: savedLanguage, // زبان اولیه از localStorage
-    fallbackLng: "en", 
-    debug: true, 
+    fallbackLng: "en",
+    debug: true,
     interpolation: {
       escapeValue: false, // نیازی به escape کردن در React نیست
     },

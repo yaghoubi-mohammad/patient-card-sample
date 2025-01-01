@@ -1,23 +1,7 @@
 {
-  "login": "Login",
-  "logout": "Logout",
-  "hello_explorer": "Hello, Explorer!",
-  "login_prompt": "You're just a step away from unlocking the universe of Octavia. Log in to begin your journey.",
-  "login_cta": "Login and Discover",
-  "loading": "Loading...",
+  "name": "name",
+  "age": "age",
+  "diagnosis": "diagnosis",
+  "details": "details"
 
-  "dashboard": "Dashboard",
-  "workshops": "Workshops",
-  "employees": "Employees",
-  "fiscalYear": "Fiscal Year",
-  "payslips": "PaySlips",
-  "reports": "Reports",
-
-  "date_and_time": "Date & Time",
-  "total_employee": "Total Employee",
-  "total_spends": "Total Spends",
-  "user_in": "user in:",
-
-  "octavia_gss_pro": "Octavia GSS Pro!",
-  "unlock_all_features": "Unlock All Features"
 }
