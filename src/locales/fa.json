@@ -1,0 +1,23 @@
+{
+  "login": "ورود",
+  "logout": "خروج",
+  "hello_explorer": "سلام، کاوشکر!",
+  "login_prompt": "تنها یک قدم تا باز کردن دنیای حسابداری اکتاویا فاصله دارید. برای شروع سفر خود وارد شوید.",
+  "login_cta": "ورود و اکتشاف",
+  "loading": "در حال بارگذاری...",
+
+  "dashboard": "داشبورد",
+  "workshops": "کارگاه‌ها",
+  "employees": "کارمندان",
+  "fiscalYear": "سال مالی",
+  "payslips": "فیش‌های حقوقی",
+  "reports": "گزارش‌ها",
+
+  "date_and_time": "تاریخ و ساعت",
+  "total_employee": "کل کارمندان",
+  "total_spends": "مجموع حقوق پرداختی",
+  "user_in": "نفر در",
+
+  "octavia_gss_pro": "اکتاویا GSS پرو!",
+  "unlock_all_features": "دریافت همه امکانات"
+}
