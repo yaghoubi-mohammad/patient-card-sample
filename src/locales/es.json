@@ -1,6 +1,7 @@
 {
-  "name": "nombre",
-  "age": "edad",
+  "name": "Nombre",
+  "age": "Edad",
   "diagnosis": "Diagnóstico",
-  "details": "detalles"
+  "details": "Detalles",
+  "patient_card": "Tarjeta de Paciente"
 }

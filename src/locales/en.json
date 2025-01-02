@@ -1,7 +1,7 @@
 {
-  "name": "name",
-  "age": "age",
-  "diagnosis": "diagnosis",
-  "details": "details"
-
+  "name": "Name",
+  "age": "Age",
+  "diagnosis": "Diagnosis",
+  "details": "Details",
+  "patient_card": "Patient Card"
 }

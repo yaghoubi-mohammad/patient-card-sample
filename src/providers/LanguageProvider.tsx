@@ -17,7 +17,7 @@ interface LanguageContextProps {
 }
 
 const defaultState: LanguageContextProps = {
-  language: localStorage.getItem("language") || "en", 
+  language: "en", 
   setLanguage: () => {},
 };
 
