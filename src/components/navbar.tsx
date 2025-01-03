@@ -56,7 +56,7 @@ console.log("language2:", language);
 
   return (
     <nav
-      className={`navbar ${
+      className={`navbar py-4 ${
         theme === "dark"
           ? "has-background-dark has-text-light"
           : "has-background-light has-text-dark"
@@ -72,7 +72,7 @@ console.log("language2:", language);
               <button
                 className={`button is-rounded ${
                   theme === "light"
-                    ? "has-background-primary has-text-light"
+                    ? "has-background-light has-text-dark"
                     : "has-background-dark has-text-light"
                 }`}
               >

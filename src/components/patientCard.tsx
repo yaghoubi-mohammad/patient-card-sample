@@ -1,6 +1,6 @@
-import React, { useContext } from "react";
+import { Calendar, IdCard, Stethoscope, User } from "lucide-react";
+import React from "react";
 import { useTranslation } from "react-i18next";
-import { ThemeContext } from "../providers/ThemeProvider";
 
 interface PatientCardProps {
   name: string;
@@ -15,44 +15,63 @@ const PatientCard: React.FC<PatientCardProps> = ({
   diagnosis,
   onDetailsClick,
 }) => {
-  const { theme } = useContext(ThemeContext);
   const { t } = useTranslation();
 
   return (
-    <div className="card">
+    <div
+      className="box p-0 box-radius box-shadow "
+      style={{ backgroundColor: "rgba(33, 150, 243, 0.1)" }}
+    >
       <header
-        className={`has-text-centered is-dark py-4 is-justify-content-center box ${
-          theme === "dark"
-            ? "has-background-dark has-text-light"
-            : "has-background-light has-text-dark"
-        }`}
+        className="p-5 theme-text"
+        style={{ backgroundColor: "rgba(33, 150, 243, 0.4)" }}
       >
-        <p>{t("patient_card")}</p>
+        <div className="is-flex is-justify-content-space-between ">
+          <p>{t("patient_card")}</p>
+          <IdCard />
+        </div>
       </header>
 
-      {/* محتوای کارت */}
-      <div className="m-5">
+      <div className="p-6">
         <div className="content">
-          <div className="field mb-5">
-            <label className="is-size-7 has-text-grey-light">{t("name")}</label>
-            <p className="has-text-weight-bold">{name}</p>
+          {/* name*/}
+          <div className="field mb-5 is-flex is-align-items-center">
+            <User className="mr-3 has-text-grey-light" size={24} />
+            <div>
+              <label className="is-size-7 has-text-grey-light">
+                {t("name")}
+              </label>
+              <p className="has-text-weight-bold theme-text">{name}</p>
+            </div>
           </div>
-          <div className="field mb-5">
-            <label className="is-size-7 has-text-grey-light">{t("age")}</label>
-            <p className="has-text-weight-bold">{age}</p>
+
+          {/* age */}
+          <div className="field mb-5 is-flex is-align-items-center">
+            <Calendar className="mr-3 has-text-grey-light" size={24} />
+            <div>
+              <label className="is-size-7 has-text-grey-light">
+                {t("age")}
+              </label>
+              <p className="has-text-weight-bold theme-text">{age}</p>
+            </div>
           </div>
-          <div className="field mb-5">
-            <label className="is-size-7 has-text-grey-light">
-              {t("diagnosis")}
-            </label>
-            <p className="has-text-weight-bold">{diagnosis}</p>
+
+          {/* diagnosis */}
+          <div className="field mb-5 is-flex is-align-items-center">
+            <Stethoscope className="mr-3 has-text-grey-light" size={24} />
+            <div>
+              <label className="is-size-7 has-text-grey-light">
+                {t("diagnosis")}
+              </label>
+              <p className="has-text-weight-bold theme-text">{diagnosis}</p>
+            </div>
           </div>
         </div>
       </div>
 
-      {/* فوتر کارت */}
+      {/* Footer */}
       <footer
-        className="button is-fullwidth is-justify-content-center is-light py-4"
+        className="button is-info is-dark is-fullwidth p-10 "
         onClick={onDetailsClick}
       >
         <button>{t("details")}</button>

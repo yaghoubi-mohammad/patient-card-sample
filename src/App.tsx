@@ -11,13 +11,13 @@ const App = () => {
   };
 
   return (
-    <div className={`app ${theme === "dark" ? "is-dark" : "is-light"}`}>
+    <div className={`${theme === "dark" ? "is-dark" : "is-light"}`}>
       {/* Navbar */}
       <Navbar />
 
       {/* Main Content */}
-      <section className="section">
-        <div className="container">
+      <section className="section columns is-mobile is-centered">
+        <div className="column is-one-quarter m-6">
           <PatientCard
             name="Alex González"
             age={29}
