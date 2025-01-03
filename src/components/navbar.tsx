@@ -41,7 +41,7 @@ const Navbar = () => {
       i18next.changeLanguage(selectedLanguage.code);
     }
   };
-console.log("language2:", language);
+  console.log("language2:", language);
   useEffect(() => {
     const savedLanguage = localStorage.getItem("language");
     if (savedLanguage) {
@@ -65,7 +65,9 @@ console.log("language2:", language);
       aria-label="main navigation"
     >
       <div className="container is-flex is-justify-content-space-between is-align-items-center">
-        <h1 className="has-text-weight-bold">Patient Card Sample</h1>
+        <h1 className="has-text-weight-bold">{t("Patient Card Sample")}</h1>
+
+        {/* Language Dropdown */}
         <div className="is-flex" style={{ gap: "10px" }}>
           <div className="dropdown is-hoverable">
             <div className="dropdown-trigger">
@@ -101,6 +103,7 @@ console.log("language2:", language);
             </div>
           </div>
 
+          {/* Theme Toggle */}
           <button
             className={`button is-rounded ${
               theme === "dark"

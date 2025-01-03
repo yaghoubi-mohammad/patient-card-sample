@@ -17,7 +17,7 @@ const App = () => {
 
       {/* Main Content */}
       <section className="section columns is-mobile is-centered">
-        <div className="column is-one-quarter m-6">
+        <div className="column is-full-mobile is-half-tablet is-one-quarter-desktop m-4">
           <PatientCard
             name="Alex González"
             age={29}

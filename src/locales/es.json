@@ -3,5 +3,6 @@
   "age": "Edad",
   "diagnosis": "Diagnóstico",
   "details": "Detalles",
-  "patient_card": "Tarjeta de Paciente"
+  "patient_card": "Tarjeta de Paciente",
+  "Patient Card Sample": "Ejemplo de tarjeta de paciente"
 }

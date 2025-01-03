@@ -22,6 +22,7 @@ const PatientCard: React.FC<PatientCardProps> = ({
       className="box p-0 box-radius box-shadow "
       style={{ backgroundColor: "rgba(33, 150, 243, 0.1)" }}
     >
+      {/* Header */}
       <header
         className="p-5 theme-text"
         style={{ backgroundColor: "rgba(33, 150, 243, 0.4)" }}
